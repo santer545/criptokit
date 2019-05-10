@@ -11,6 +11,16 @@
         max-width: 810px;
         margin: 0 auto;
     }
+
+    &-col {
+        flex: 0 0 calc(100% - 235px);
+        padding: 0 20px;
+    }
+
+    &-inner {
+        background-color: #fff;
+        height: 100%;
+    }
 }
 
 h1 {
@@ -54,6 +64,9 @@ h1 {
         display: flex;
         justify-content: space-between;
         margin-top: -100px;  
+        margin-left: -20px;
+        margin-right: -20px;
+        padding-bottom: 70px;
 
         &__inverse {
             margin-top: 0;  
@@ -68,7 +81,11 @@ h1 {
         &-inner {
             background-color: #fff;
             padding: 15px 20px;
-            margin-bottom: 35px;
+
+            &:not(:last-child) {
+                margin-bottom: 35px;
+            }
+            
         }
     }
 
@@ -79,6 +96,7 @@ h1 {
         background-repeat: no-repeat;
         position: relative;
         padding: 15px 20px;
+        margin-bottom: 35px;
 
         .form-control {
             height: 25px;
@@ -252,5 +270,34 @@ h1 {
     &__inverse {
         align-items: center;
         padding-top: 15px;
+    }
+}
+
+.news {
+    &-item {
+        padding: 20px;
+        font-size: 16px;
+        border-bottom: 1px solid #a1c1d2;
+    }
+
+    &-heading {
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+
+    &-text {
+        font-weight: 300;
+        margin-bottom: 20px;
+    }
+
+    &-bottom {
+        display: flex;
+        justify-content: space-between;
+        font-weight: 300;
+        font-size: 12px;
+
+        a {
+            color: #009a9a;
+        }
     }
 }

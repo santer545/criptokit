@@ -59,11 +59,24 @@
                 padding: 0 10px 15px;
                 position: relative;
 
-                a {
+                a,
+                span {
                     font-size: 18px;
                     color: #000;
                     font-weight: 600;
                     text-decoration: none;
+                }
+
+                &.active {
+                    &:before {
+                        content: '';
+                        position: absolute;
+                        left: 0;
+                        right: 0;
+                        bottom: 8px;
+                        height: 4px;
+                        background-color: #002f67;
+                    }
                 }
 
                 .dropdown {
