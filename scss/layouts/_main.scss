@@ -112,6 +112,7 @@
                 padding: 10px;
                 display: none;
                 width: 195px;
+                z-index: 2;
             }
 
             &.active {
@@ -313,6 +314,7 @@
     background-color: #fff;
     padding: 10px;
     margin: 0;
+    z-index: 2;
 
     li {
         margin-bottom: 10px;
@@ -1064,6 +1066,7 @@ h2 {
         width: 150px;
         background-color: #fff;
         padding: 10px;
+        z-index: 2;
 
         &.active {
             display: block;

@@ -5,6 +5,11 @@
         background-repeat: no-repeat;
         height: 220px;
         padding-top: 20px;
+
+        @media screen and (max-width: 767px) {
+            height: auto;
+            background-image: none;
+        }
     }
 
     &-container {
@@ -18,6 +23,12 @@
         -webkit-box-shadow: 0px 9px 28px -15px rgba(0, 0, 0, 0.35);
         -moz-box-shadow: 0px 9px 28px -15px rgba(0, 0, 0, 0.35);
         box-shadow: 0px 9px 28px -15px rgba(0, 0, 0, 0.35);
+
+        @media screen and (max-width: 767px) {
+            width: calc(100% - 40px);
+            padding: 0 20px;
+            box-shadow: none;
+        }
     }
 
     &-block {
@@ -88,6 +99,10 @@ h1 {
     font-size: 24px;
     font-weight: 600;
     margin: 0 0 25px;
+
+    @media screen and (max-width: 767px) {
+        text-align: center;
+    }
 }
 
 .breadcrumbs {
@@ -95,6 +110,10 @@ h1 {
     margin: 0;
     list-style-type: none;
     display: flex;
+
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
 
     li {
         position: relative;
@@ -128,6 +147,11 @@ h1 {
         margin-right: -20px;
         padding-bottom: 70px;
 
+        @media screen and (max-width: 767px) {
+            margin-top: 0;
+            display: block;
+        }
+
         &__inverse {
             margin-top: 0;
             align-items: flex-start;
@@ -136,6 +160,10 @@ h1 {
 
     &-col {
         flex: 0 0 235px;
+
+        @media screen and (max-width: 767px) {
+            display: none;
+        }
 
 
 
@@ -595,13 +623,25 @@ label {
         font-size: 18px;
         font-weight: 600;
 
+        @media screen and (max-width: 767px) {
+            background-color: #003366;
+            padding: 0;
+            border-radius: 5px 5px 0 0;
+        }
+
         span {
             background-color: #d6e7e7;
             padding: 5px 20px;
             display: block;
             text-align: center;
             border-radius: 30px;
+            @media screen and (max-width: 767px) {
+            background-color: #003366;
+            color: #fff;
         }
+        }
+
+        
     }
 
     &-th {
@@ -610,6 +650,10 @@ label {
         font-size: 18px;
         display: flex;
         padding: 7px 20px;
+
+        @media screen and (max-width: 767px) {
+            display: none;
+        }
 
         &__cell {
             &:nth-child(2n+1) {
@@ -644,6 +688,12 @@ label {
         &:nth-child(2) {
             flex: 0 0 62px;
             text-align: center;
+        }
+
+        &:nth-child(4) {
+            @media screen and (max-width: 767px) {
+                display: none;
+            }
         }
 
         span {

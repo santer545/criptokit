@@ -74,6 +74,12 @@ body {
             background: linear-gradient(to right, rgba(158, 194, 197, 1) 0%, rgba(93, 135, 158, 1) 100%);
             filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#9ec2c5', endColorstr='#5d879e', GradientType=1);
         }
+
+        .partners {
+            @media screen and (max-width: 767px) {
+                display: none;
+            }
+        }
     }
 }
 

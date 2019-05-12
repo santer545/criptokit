@@ -26,15 +26,19 @@
                     <div class="header-user">Выход</div>
                 </div>
             </div>
-            <div class="header-between header-between__content">
+            <div class="header-between">
                 <div class="container">
                     <div class="d-f header-holder">
-                        <a class="header-logo header-logo__content" href="#">
+                        <a class="header-logo" href="#">
                             <img src="images/logo-header.png" alt="">
                             <span>Cryptokit</span>
                         </a>
                         <nav class="header-nav">
+                            <div class="gamburger-btn js-gamburger">
+                                <img src="images/gamburger.png" alt="">
+                            </div>
                             <ul>
+                                <li class="account"><div class="account-holder"><img src="images/user.png" alt="">cryptok24x7xbot</div></li>
                                 <li><a href="#">Обмен</a></li>
                                 <li><a href="#">Отзывы</a></li>
                                 <li><a href="#">Правила</a></li>
@@ -59,8 +63,113 @@
                                 </li>
                                 <li><a href="#">Тарифы</a></li>
                                 <li><a href="#">Контакты</a></li>
+                                <li class="exit">Выход</li>
                             </ul>
                         </nav>
+                        <div class="settings">
+                            <img src="images/settings.png" class="js-settings" alt="">
+                            <ul class="language">
+                                <li>Выбор языка</li>
+                                <li><a href="#"><img src="images/american.jpg" alt="">Английский</a></li>
+                                <li><a href="#"><img src="images/russion.jpg" alt="">Русский</a></li>
+                            </ul>
+                        </div>
+                        <div class="mail-box">
+                            <img src="images/mobile-mail.png" alt="" class="js-mail-box">
+                            <ul class="contact-dropdown">
+                                <li>Контакты</li>
+                                <li><img src="images/icq.png" alt="">12345</li>
+                                <li><img src="images/skype.png" alt="">12345</li>
+                                <li><img src="images/email.png" alt="">12345</li>
+                                <li><img src="images/teleg.png" alt="">12345</li>
+                                <li><img src="images/call.png" alt="">12345</li>
+                                <li><img src="images/whatsup.png" alt="">12345</li>
+                                <li><img src="images/lamp.png" alt="">12345</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="header-selectwrapper">
+                        <div class="currency-left">
+                            <div class="select-item">
+                                <div class="select-labe">ОТДАЁТЕ:</div>
+                                <select name="" id="">
+                                    <option value="Payeer">Payeer EUR</option>
+                                    <option value="Payeer-1">Payeer EUR</option>
+                                    <option value="Payeer-2">Payeer EUR</option>
+                                </select>
+                                <input type="text" class="form-control" value="1">
+                                <div class="select-currency">EUR</div>
+                            </div>
+                        </div>
+                        <div class="currency-right">
+                            <div class="select-item">
+                                <div class="select-labe">со счета:</div>
+                                <input type="text" class="form-control form-control__big" value="124151516">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="header-selectwrapper">
+                        <div class="currency-left">
+                            <div class="select-item">
+                                <div class="select-labe"><span>отправить <br> с комиссией:</span></div>
+                                <select name="" id="">
+                                    <option value="Payeer">Payeer EUR</option>
+                                    <option value="Payeer-1">Payeer EUR</option>
+                                    <option value="Payeer-2">Payeer EUR</option>
+                                </select>
+                                <input type="text" class="form-control" value="1">
+                                <div class="select-currency">EUR</div>
+                            </div>
+                        </div>
+                        <div class="currency-right"></div>
+                    </div>
+                    <div class="header-selectwrapper">
+                        <div class="currency-left">
+                            <div class="select-item">
+                                <div class="select-labe"><span>отправить <br> с комиссией:</span></div>
+                                <select name="" id="">
+                                    <option value="Payeer">Payeer EUR</option>
+                                    <option value="Payeer-1">Payeer EUR</option>
+                                    <option value="Payeer-2">Payeer EUR</option>
+                                </select>
+                                <input type="text" class="form-control" value="1">
+                                <div class="select-currency">EUR</div>
+                            </div>
+                        </div>
+                        <div class="currency-right">
+                            <div class="select-item">
+                                <div class="select-labe">на счет:</div>
+                                <input type="text" class="form-control form-control__big" value="14252636">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="header-selectwrapper">
+                        <div class="currency-left">
+                            <div class="exchange">
+                                <div class="exchange-text">Курс обмена: 1 EUR = 1.07749 USD</div>
+                                <p>
+                                    <input type="checkbox" id="test1" />
+                                    <label for="test1">С правилами сервиса ознакомлен <br>и согласен</label>
+                                </p>
+                                <p>
+                                    <input type="checkbox" id="test2" checked="checked" />
+                                    <label for="test2">Даю согласие на обработку моих <br>персональных данных</label>
+                                </p>
+                                <p>
+                                    <input type="checkbox" id="test3" checked="checked" />
+                                    <label for="test3">Запомнить введенные данные</label>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="currency-right">
+                            <div class="select-item">
+                                <div class="select-labe">E-MAIL*:</div>
+                                <input type="text" class="form-control form-control__big" value="cryptokit@mail.ru">
+                            </div>
+                            <div class="button-wrapper text-center">
+                                <button class="exchange-button">обменять</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -234,6 +343,15 @@
             </div>
         </section>
         <footer class="footer">
+            <div class="footer-mobile">
+                <div class="mobile-copyright">
+                    <div>© kryptokit.vom.ua</div>
+                    <div>Сервис обмена электронных валют</div>
+                </div>
+                <div class="footer-version">
+                    <a href="#">Полная версия сайта</a>
+                </div>
+            </div>
             <div class="footer-container">
                 <div class="footer-holder">
                     <ul class="footer-menu">
@@ -258,6 +376,9 @@
                 <div class="footer-copyright text-center">Copyright &copy; 2019 <a href="#">aexchanger.com</a></div>
             </div>
         </footer>
+        <div class="mobile-top" id="js-to-top">
+            <img src="images/mobile-top.png" alt="">
+        </div>
     </div>
 </body>
 <script src="js/all.min.js"></script>
