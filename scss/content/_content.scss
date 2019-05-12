@@ -463,16 +463,53 @@ h1 {
         padding: 20px;
         font-size: 16px;
         border-bottom: 1px solid #a1c1d2;
+
+        @media screen and (max-width: 767px) {
+            border: none;
+        }
+    }
+
+    &-list {
+        @media screen and (max-width: 767px) {
+            padding-bottom: 50px;
+        }
     }
 
     &-heading {
         font-size: 18px;
         margin-bottom: 20px;
+
+        @media screen and (max-width: 767px) {
+            text-align: center;
+        }
     }
 
     &-text {
         font-weight: 300;
         margin-bottom: 20px;
+
+        @media screen and (max-width: 767px) {
+            display: none;
+        }
+    }
+
+    &-preview {
+        display: none;
+
+        @media screen and (max-width: 767px) {
+            display: block;
+            text-decoration: underline;
+            color: #336699;
+            font-size: 15px;
+            margin-bottom: 10px;
+        }
+    }
+
+    &-sections,
+    &-tags {
+        @media screen and (max-width: 767px) {
+            display: none;
+        }
     }
 
     &-bottom {
@@ -481,8 +518,18 @@ h1 {
         font-weight: 300;
         font-size: 12px;
 
+        @media screen and (max-width: 767px) {
+            justify-content: flex-end;
+            padding-right: 50px;
+        }
+
         a {
             color: #009a9a;
+
+            @media screen and (max-width: 767px) {
+                color: #000;
+                text-decoration: none;
+            }
         }
     }
 
@@ -635,13 +682,14 @@ label {
             display: block;
             text-align: center;
             border-radius: 30px;
+
             @media screen and (max-width: 767px) {
-            background-color: #003366;
-            color: #fff;
-        }
+                background-color: #003366;
+                color: #fff;
+            }
         }
 
-        
+
     }
 
     &-th {
