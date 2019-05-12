@@ -49,6 +49,9 @@ body {
     font: 500 16px / 1.4 'Open Sans', sans-serif;
     color: #000;
     background-color: #ebebeb;
+    &.body-content {
+        background-color: #fff;
+    }
 }
 
 .wrapper {
