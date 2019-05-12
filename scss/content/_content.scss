@@ -465,3 +465,15 @@ label {
     flex: 0 0 50%;
     padding: 0 15px;
 }
+
+.attention {
+    padding: 10px;
+    background-color: #fff;
+    margin-top: -100px;
+
+    &-heading {
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+
+}
