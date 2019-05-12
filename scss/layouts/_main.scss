@@ -6,6 +6,10 @@
         color: #ffffff;
         padding-top: 3px;
 
+        @media screen and (max-width: 767px) {
+            display: none;
+        }
+
         a {
             color: #ffffff;
             text-decoration: none;
@@ -26,14 +30,33 @@
         display: flex;
         align-items: flex-start;
 
+        @media screen and (max-width: 767px) {
+            font-size: 18px;
+            color: #000;
+            order: 2;
+        }
+
         &__content {
             color: #000;
+        }
+
+        img {
+            @media screen and (max-width: 767px) {
+                max-width: 56px;
+            }
         }
     }
 
     &-holder {
         align-items: center;
         padding: 0 40px 45px;
+
+        @media screen and (max-width: 767px) {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+            align-items: center;
+        }
     }
 
     &-between {
@@ -42,6 +65,18 @@
         background-repeat: no-repeat;
         background-size: cover;
 
+        @media screen and (max-width: 767px) {
+            padding: 0;
+            background: rgba(211, 227, 229, 1);
+            background: -moz-linear-gradient(left, rgba(211, 227, 229, 1) 0%, rgba(182, 201, 212, 1) 100%);
+            background: -webkit-gradient(left top, right top, color-stop(0%, rgba(211, 227, 229, 1)), color-stop(100%, rgba(182, 201, 212, 1)));
+            background: -webkit-linear-gradient(left, rgba(211, 227, 229, 1) 0%, rgba(182, 201, 212, 1) 100%);
+            background: -o-linear-gradient(left, rgba(211, 227, 229, 1) 0%, rgba(182, 201, 212, 1) 100%);
+            background: -ms-linear-gradient(left, rgba(211, 227, 229, 1) 0%, rgba(182, 201, 212, 1) 100%);
+            background: linear-gradient(to right, rgba(211, 227, 229, 1) 0%, rgba(182, 201, 212, 1) 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#d3e3e5', endColorstr='#b6c9d4', GradientType=1);
+        }
+
         &__content {
             background-color: #fff;
             background-image: none;
@@ -49,15 +84,49 @@
     }
 
     &-nav {
+        @media screen and (max-width: 767px) {
+            order: 1;
+            position: relative;
+            padding: 16px;
+            margin-top: -13px;
+            margin-bottom: -13px;
+        }
+
+        &.active {
+            background: #fff;
+
+        }
+
         >ul {
             display: flex;
             list-style-type: none;
             padding: 0;
             margin: 0;
 
+            @media screen and (max-width: 767px) {
+
+                position: absolute;
+                top: 100%;
+                left: 0;
+                background-color: #fff;
+                padding: 10px;
+                display: none;
+                width: 195px;
+            }
+
+            &.active {
+                @media screen and (max-width: 767px) {
+                    display: block;
+                }
+            }
+
             >li {
                 padding: 15px 10px;
                 position: relative;
+
+                @media screen and (max-width: 767px) {
+                    padding: 8px 10px;
+                }
 
                 a,
                 span {
@@ -65,6 +134,10 @@
                     color: #000;
                     font-weight: 600;
                     text-decoration: none;
+
+                    @media screen and (max-width: 767px) {
+                        font-size: 16px;
+                    }
                 }
 
                 &.active {
@@ -132,6 +205,10 @@
         padding: 0 40px 10px;
         display: flex;
         flex-wrap: wrap;
+
+        @media screen and (max-width: 767px) {
+            display: none;
+        }
     }
 
     &-language {
@@ -151,6 +228,102 @@
             margin: 0 30px 0 10px;
             font-size: 16px;
         }
+    }
+}
+
+.account {
+    padding: 10px 20px;
+    font-weight: 300;
+    border-bottom: 1px solid #999999;
+    margin: 0 -10px;
+    display: none;
+
+    @media screen and (max-width: 767px) {
+        display: block;
+    }
+
+    &-holder {
+        display: flex;
+        align-items: center;
+    }
+
+    img {
+        margin-right: 10px;
+    }
+}
+
+.exit {
+    display: none;
+    @media screen and (max-width: 767px) {
+        display: block;
+        padding: 20px 0 10px;
+        text-align: right;
+        font-size: 18px;
+    }
+}
+
+.settings {
+    order: 3;
+
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
+}
+
+.mobile-online {
+    padding: 20px;
+    margin: 20px 0;
+    background-color: #fff;
+    font-size: 14px;
+
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
+}
+
+.gamburger-btn {
+    cursor: pointer;
+
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
+}
+
+.mail-box {
+    order: 4;
+    padding: 13px;
+    margin: -14px 0;
+    position: relative;
+    &.active {
+        background-color: #fff;
+    }
+
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
+}
+
+.contact-dropdown {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    padding: 10px;
+    width: 150px;
+    background-color: #fff;
+    padding: 10px;
+    margin: 0;
+
+    li {
+        margin-bottom: 10px;
+
+        img {
+            margin-right: 10px;
+        }
+    }
+
+    &.active {
+        display: block;
     }
 }
 
@@ -179,6 +352,10 @@ h2 {
     background-color: #fff;
     margin-top: 24px;
 
+    @media screen and (max-width: 767px) {
+        border-top: 25px solid #ebebeb;
+    }
+
     &-text {
         width: 80%;
         margin: 0 auto;
@@ -189,10 +366,18 @@ h2 {
 .features {
     padding: 40px 0;
 
+    @media screen and (max-width: 767px) {
+        background-color: #ebebeb;
+    }
+
     &-list {
         display: flex;
         flex-wrap: wrap;
         padding: 0 40px;
+
+        @media screen and (max-width: 767px) {
+            padding: 0 20px;
+        }
     }
 
     &-item {
@@ -201,11 +386,26 @@ h2 {
         text-align: center;
         margin-bottom: 40px;
 
+        @media screen and (max-width: 767px) {
+            padding: 0;
+            max-width: 33.3%;
+        }
+
         span {
             display: block;
             font-size: 14px;
             text-transform: uppercase;
             padding-top: 12px;
+
+            @media screen and (max-width: 767px) {
+                font-size: 9px;
+            }
+        }
+
+        img {
+            @media screen and (max-width: 767px) {
+                max-width: 70px;
+            }
         }
     }
 }
@@ -247,16 +447,43 @@ h2 {
         max-width: 785px;
         margin: 0 auto;
 
+        @media screen and (max-width: 767px) {
+            padding-right: 30px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
         a {
             color: #000;
             text-decoration: none;
         }
+    }
+
+    &-mobile {
+        display: none;
+
+        @media screen and (max-width: 767px) {
+            display: block;
+            width: 80%;
+            margin: 0 auto;
+        }
+    }
+
+    &-item {
+        background-color: #fff;
+        border-top: 12px solid #036;
+        padding: 21px 20px 43px;
+        border-radius: 0 0 3px 3px;
     }
 }
 
 
 .heading-line {
     position: relative;
+
+    @media screen and (max-width: 767px) {
+        text-align: center;
+    }
 
     &:before {
         content: '';
@@ -266,6 +493,11 @@ h2 {
         bottom: 5px;
         height: 1px;
         background-color: #003366;
+
+        @media screen and (max-width: 767px) {
+            left: 55px;
+            width: 265px;
+        }
 
     }
 }
@@ -283,16 +515,38 @@ h2 {
         justify-content: space-between;
         align-items: center;
 
+        @media screen and (max-width: 767px) {
+            flex-wrap: wrap;
+        }
+
     }
 
     &-item {
         display: flex;
         align-items: center;
+
+        @media screen and (max-width: 767px) {
+            width: 80%;
+            margin: 0 auto 20px;
+            justify-content: space-between;
+        }
+    }
+
+    &-arrow {
+        img {
+            @media screen and (max-width: 767px) {
+                max-width: 25px;
+            }
+        }
     }
 
     &-info {
         display: flex;
         align-items: center;
+
+        @media screen and (max-width: 767px) {
+            display: block;
+        }
 
         img {
             margin: 0 10px;
@@ -304,6 +558,10 @@ h2 {
 
         &__time {
             text-align: right;
+
+            @media screen and (max-width: 767px) {
+                display: none;
+            }
         }
     }
 
@@ -336,6 +594,12 @@ h2 {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
+
+        @media screen and (max-width: 767px) {
+            display: block;
+            width: 80%;
+            margin: 0 auto;
+        }
     }
 
     &-item {
@@ -344,6 +608,21 @@ h2 {
         margin-bottom: 30px;
         display: flex;
         align-items: center;
+
+        @media screen and (max-width: 767px) {
+            display: none;
+
+            &:nth-child(1),
+            &:nth-child(2),
+            &:nth-child(3),
+            &:nth-child(4),
+            &:nth-child(5),
+            &:nth-child(6) {
+                display: flex;
+            }
+        }
+
+
     }
 
     &-text {
@@ -360,6 +639,10 @@ h2 {
     &-holder {
         padding-top: 15px;
         border-top: 1px solid #036;
+
+        @media screen and (max-width: 767px) {
+            border-top: none;
+        }
     }
 
     &-inner {
@@ -367,20 +650,71 @@ h2 {
         margin: 0 auto;
         display: flex;
         align-items: center;
+
+        @media screen and (max-width: 767px) {
+            display: block;
+            max-width: 80%;
+            margin: 0 auto;
+        }
     }
 
     &-text {
         font-size: 20px;
         text-transform: uppercase;
+
         margin-right: 50px;
+
+        @media screen and (max-width: 767px) {
+            position: relative;
+            text-align: center;
+            margin: 0;
+        }
+
+        &:before {
+
+
+            @media screen and (max-width: 767px) {
+                left: 18px;
+                width: 265px;
+                content: '';
+                position: absolute;
+                bottom: 5px;
+                height: 1px;
+                background-color: #003366;
+            }
+
+        }
     }
 
     &-images {
+        @media screen and (max-width: 767px) {
+            display: flex;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
         img {
+            @media screen and (max-width: 767px) {
+                margin: 10px;
+            }
+
             &:not(:last-child) {
                 margin-right: 13px;
             }
         }
+    }
+}
+
+.mobile-top {
+    position: fixed;
+    z-index: 999;
+    bottom: 100px;
+    right: 10px;
+    display: none;
+
+    @media screen and (max-width: 767px) {
+        display: block;
     }
 }
 
@@ -390,9 +724,42 @@ h2 {
     background-repeat: no-repeat;
     padding: 15px 0;
 
+    @media screen and (max-width: 767px) {
+        background-image: url('../images/footer-mobile.jpg');
+    }
+
     &-container {
         max-width: 785px;
         margin: 0 auto;
+
+        @media screen and (max-width: 767px) {
+            display: none;
+        }
+    }
+
+    &-version {
+        display: none;
+        text-align: center;
+
+        @media screen and (max-width: 767px) {
+            display: block;
+        }
+
+        a {
+            color: #008aff;
+            text-decoration: underline;
+        }
+    }
+
+    .mobile-copyright {
+        font-size: 14px;
+        text-align: center;
+        padding: 20px 0;
+        display: none;
+
+        @media screen and (max-width: 767px) {
+            display: block;
+        }
     }
 
     &-menu {
@@ -672,6 +1039,49 @@ h2 {
 }
 
 
+.settings {
+    display: none;
+    padding: 13px;
+    margin: -14px 0;
+    position: relative;
+
+    &.active {
+        background: #fff;
+    }
+
+
+    @media screen and (max-width: 767px) {
+        display: block;
+    }
+    ul {
+        display: none;
+        position: absolute;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        right: 0;
+        top: 100%;
+        width: 150px;
+        background-color: #fff;
+        padding: 10px;
+
+        &.active {
+            display: block;
+        }
+
+        li {
+            margin-bottom: 10px;
+            img {
+                margin-right: 10px;
+            }
+
+            a {
+                text-decoration: none;
+            }
+        }
+    }
+}
+
 
 /**
  * Swiper 4.5.0
@@ -694,6 +1104,10 @@ h2 {
     height: 100%;
     /* Fix of Webkit flickering */
     z-index: 1;
+
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
 }
 
 .swiper-container-no-flexbox .swiper-slide {

@@ -14,7 +14,10 @@
 
     &-col {
         flex: 0 0 calc(100% - 235px);
-        padding: 0 20px;
+        margin: 0 20px;
+        -webkit-box-shadow: 0px 9px 28px -15px rgba(0, 0, 0, 0.35);
+        -moz-box-shadow: 0px 9px 28px -15px rgba(0, 0, 0, 0.35);
+        box-shadow: 0px 9px 28px -15px rgba(0, 0, 0, 0.35);
     }
 
     &-block {
@@ -135,9 +138,13 @@ h1 {
         flex: 0 0 235px;
 
 
+
         &-inner {
             background-color: #fff;
             padding: 15px 20px;
+            -webkit-box-shadow: 0px 9px 28px -7px rgba(0, 0, 0, 0.35);
+            -moz-box-shadow: 0px 9px 28px -7px rgba(0, 0, 0, 0.35);
+            box-shadow: 0px 9px 28px -7px rgba(0, 0, 0, 0.35);
 
             &:not(:last-child) {
                 margin-bottom: 35px;
@@ -286,26 +293,27 @@ h1 {
 
     &-wrapper {
         background-color: #fff;
-        margin-top: 20px;   
-        padding-top: 15px;  
+        margin-top: 20px;
+        padding-top: 15px;
     }
 
     &-item {
-        padding: 25px;    
+        padding: 25px;
     }
 
-    &-heading__line{
-        font-size: 18px;    
-        line-height: 20px;  
+    &-heading__line {
+        font-size: 18px;
+        line-height: 20px;
         position: relative;
-        padding-left: 25px; 
+        padding-left: 25px;
+
         &:before {
             content: '';
             position: absolute;
-            left: 0;    
-            right: 0;   
-            bottom: 0;  
-            height: 1px;    
+            left: 0;
+            right: 0;
+            bottom: 0;
+            height: 1px;
             background-color: #b3c1d1;
         }
     }
@@ -313,6 +321,7 @@ h1 {
     &-currency {
         font-size: 12px;
         margin-bottom: 10px;
+
         span {
             margin-right: 40px;
         }
@@ -563,8 +572,7 @@ label {
 .attention {
     padding: 3px 10px;
     background-color: #fff;
-    // margin-top: -109px;
-    line-height: 19px;  
+    line-height: 19px;
     margin-bottom: 13px;
 
     &-heading {
@@ -572,4 +580,75 @@ label {
         margin-bottom: 5px;
     }
 
+}
+
+.rate {
+
+    &-table {
+        margin-bottom: 10px;
+    }
+
+    &-heading {
+        padding: 10px 20px;
+        border-radius: 10px 10px 0 0;
+        background-color: #fff;
+        font-size: 18px;
+        font-weight: 600;
+
+        span {
+            background-color: #d6e7e7;
+            padding: 5px 20px;
+            display: block;
+            text-align: center;
+            border-radius: 30px;
+        }
+    }
+
+    &-th {
+        background-color: #003366;
+        color: #fff;
+        font-size: 18px;
+        display: flex;
+        padding: 7px 20px;
+
+        &__cell {
+            &:nth-child(2n+1) {
+                flex: 0 0 35%;
+            }
+
+            &:nth-child(2) {
+                flex: 0 0 62px;
+                text-align: center;
+            }
+        }
+    }
+
+    &-row {
+        padding-left: 20px;
+        padding-right: 20px;
+        display: flex;
+        background-color: #fff;
+        border-bottom: 1px solid #b3c1d1;
+
+    }
+
+    &-td {
+        padding: 7px 0;
+        font-weight: 300;
+
+
+        &:nth-child(2n+1) {
+            flex: 0 0 35%;
+        }
+
+        &:nth-child(2) {
+            flex: 0 0 62px;
+            text-align: center;
+        }
+
+        span {
+            margin-right: 30px;
+        }
+
+    }
 }

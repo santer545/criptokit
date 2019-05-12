@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,600,700" rel="stylesheet">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
@@ -33,7 +34,11 @@
                             <span>Cryptokit</span>
                         </a>
                         <nav class="header-nav">
+                            <div class="gamburger-btn js-gamburger">
+                                <img src="images/gamburger.png" alt="">
+                            </div>
                             <ul>
+                                <li class="account"><div class="account-holder"><img src="images/user.png" alt="">cryptok24x7xbot</div></li>
                                 <li><a href="#">Обмен</a></li>
                                 <li><a href="#">Отзывы</a></li>
                                 <li><a href="#">Правила</a></li>
@@ -58,8 +63,30 @@
                                 </li>
                                 <li><a href="#">Тарифы</a></li>
                                 <li><a href="#">Контакты</a></li>
+                                <li class="exit">Выход</li>
                             </ul>
                         </nav>
+                        <div class="settings">
+                            <img src="images/settings.png" class="js-settings" alt="">
+                            <ul class="language">
+                                <li>Выбор языка</li>
+                                <li><a href="#"><img src="images/american.jpg" alt="">Английский</a></li>
+                                <li><a href="#"><img src="images/russion.jpg" alt="">Русский</a></li>
+                            </ul>
+                        </div>
+                        <div class="mail-box">
+                            <img src="images/mobile-mail.png" alt="" class="js-mail-box">
+                            <ul class="contact-dropdown">
+                                <li>Контакты</li>
+                                <li><img src="images/icq.png" alt="">12345</li>
+                                <li><img src="images/skype.png" alt="">12345</li>
+                                <li><img src="images/email.png" alt="">12345</li>
+                                <li><img src="images/teleg.png" alt="">12345</li>
+                                <li><img src="images/call.png" alt="">12345</li>
+                                <li><img src="images/whatsup.png" alt="">12345</li>
+                                <li><img src="images/lamp.png" alt="">12345</li>
+                            </ul>
+                        </div>
                     </div>
                     <div class="header-selectwrapper">
                         <div class="currency-left">
@@ -120,7 +147,6 @@
                         <div class="currency-left">
                             <div class="exchange">
                                 <div class="exchange-text">Курс обмена: 1 EUR = 1.07749 USD</div>
-                                
                                 <p>
                                     <input type="checkbox" id="test1" />
                                     <label for="test1">С правилами сервиса ознакомлен <br>и согласен</label>
@@ -140,16 +166,17 @@
                                 <div class="select-labe">E-MAIL*:</div>
                                 <input type="text" class="form-control form-control__big" value="cryptokit@mail.ru">
                             </div>
-                            
                             <div class="button-wrapper text-center">
                                 <button class="exchange-button">обменять</button>
                             </div>
-                            
                         </div>
                     </div>
                 </div>
             </div>
         </header>
+        <section class="mobile-online">
+            Наш On-line сервис предназначен для тех, кто хочет быстро, безопасно и по выгодному курсу обменять такие виды электронных валют: Webmoney, Perfect Money, Qiwi, PayPal, Яндекс. Деньги, Альфа-Банк, ВТБ 24, Приват24, Visa/Master Card, Western uniоn, MoneyGram.
+        </section>
         <section class="advanced">
             <div class="container">
                 <h2 class="text-center">Наши преимущества</h2>
@@ -193,6 +220,37 @@
             <div class="reviews-outer">
                 <div class="reviews-inner">
                     <!-- Swiper -->
+                    <div class="reviews-mobile">
+                        <div class="review-list">
+                            <div class="reviews-item">
+                                <div class="reviews-heading">Гость Гость</div>
+                                <div class="reviews-text">
+                                    Lorem ipsum dolor sit amet, oratio doctus complectitur in sit, quo adipisci quaestio constituto eu. Est quidam scaevola ex, quo at officiis principes consetetur. Eu duis oblique mea. Cu est phaedrum repudiare urbanitas, te sed quod purto.
+                                </div>
+                                <div class="reviews-date">
+                                    20/04/2018
+                                </div>
+                            </div>
+                            <div class="reviews-item">
+                                <div class="reviews-heading">Гость Гость</div>
+                                <div class="reviews-text">
+                                    Lorem ipsum dolor sit amet, oratio doctus complectitur in sit, quo adipisci quaestio constituto eu. Est quidam scaevola ex, quo at officiis principes consetetur. Eu duis oblique mea. Cu est phaedrum repudiare urbanitas, te sed quod purto.
+                                </div>
+                                <div class="reviews-date">
+                                    20/04/2018
+                                </div>
+                            </div>
+                            <div class="reviews-item">
+                                <div class="reviews-heading">Гость Гость</div>
+                                <div class="reviews-text">
+                                    Lorem ipsum dolor sit amet, oratio doctus complectitur in sit, quo adipisci quaestio constituto eu. Est quidam scaevola ex, quo at officiis principes consetetur. Eu duis oblique mea. Cu est phaedrum repudiare urbanitas, te sed quod purto.
+                                </div>
+                                <div class="reviews-date">
+                                    20/04/2018
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <div class="swiper-container" id="js-reviews">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
@@ -323,6 +381,37 @@
             <h2 class="text-center">Новости</h2>
             <div class="reviews-outer">
                 <div class="reviews-inner">
+                    <div class="reviews-mobile">
+                        <div class="review-list">
+                            <div class="reviews-item">
+                                <div class="reviews-heading">Гость Гость</div>
+                                <div class="reviews-text">
+                                    Lorem ipsum dolor sit amet, oratio doctus complectitur in sit, quo adipisci quaestio constituto eu. Est quidam scaevola ex, quo at officiis principes consetetur. Eu duis oblique mea. Cu est phaedrum repudiare urbanitas, te sed quod purto.
+                                </div>
+                                <div class="reviews-date">
+                                    20/04/2018
+                                </div>
+                            </div>
+                            <div class="reviews-item">
+                                <div class="reviews-heading">Гость Гость</div>
+                                <div class="reviews-text">
+                                    Lorem ipsum dolor sit amet, oratio doctus complectitur in sit, quo adipisci quaestio constituto eu. Est quidam scaevola ex, quo at officiis principes consetetur. Eu duis oblique mea. Cu est phaedrum repudiare urbanitas, te sed quod purto.
+                                </div>
+                                <div class="reviews-date">
+                                    20/04/2018
+                                </div>
+                            </div>
+                            <div class="reviews-item">
+                                <div class="reviews-heading">Гость Гость</div>
+                                <div class="reviews-text">
+                                    Lorem ipsum dolor sit amet, oratio doctus complectitur in sit, quo adipisci quaestio constituto eu. Est quidam scaevola ex, quo at officiis principes consetetur. Eu duis oblique mea. Cu est phaedrum repudiare urbanitas, te sed quod purto.
+                                </div>
+                                <div class="reviews-date">
+                                    20/04/2018
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <!-- Swiper -->
                     <div class="swiper-container" id="js-news">
                         <div class="swiper-wrapper">
@@ -566,6 +655,15 @@
             </div>
         </section>
         <footer class="footer">
+            <div class="footer-mobile">
+                <div class="mobile-copyright">
+                    <div>© kryptokit.vom.ua</div>
+                    <div>Сервис обмена электронных валют</div>
+                </div>
+                <div class="footer-version">
+                    <a href="#">Полная версия сайта</a>
+                </div>
+            </div>
             <div class="footer-container">
                 <div class="footer-holder">
                     <ul class="footer-menu">
@@ -590,6 +688,9 @@
                 <div class="footer-copyright text-center">Copyright &copy; 2019 <a href="#">aexchanger.com</a></div>
             </div>
         </footer>
+        <div class="mobile-top" id="js-to-top">
+            <img src="images/mobile-top.png" alt="">
+        </div>
     </div>
 </body>
 <script src="js/all.min.js"></script>
