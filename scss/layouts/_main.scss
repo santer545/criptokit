@@ -1103,7 +1103,8 @@ h2 {
     overflow: hidden;
     list-style: none;
     padding: 0;
-    max-width: 785px;
+    max-width: 845px;
+    padding: 0 60px;
     height: 100%;
     /* Fix of Webkit flickering */
     z-index: 1;
@@ -1286,6 +1287,7 @@ h2 {
 .swiper-button-prev,
 .swiper-button-next {
     position: absolute;
+    top: calc(50% - 10px);
     z-index: 10;
     cursor: pointer;
     display: flex;
@@ -1310,11 +1312,11 @@ h2 {
 .swiper-button-prev,
 .swiper-container-rtl .swiper-button-next {
     //background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M0%2C22L22%2C0l2.1%2C2.1L4.2%2C22l19.9%2C19.9L22%2C44L0%2C22L0%2C22L0%2C22z'%20fill%3D'%23007aff'%2F%3E%3C%2Fsvg%3E");
-    left: 10px;
+    left: 0;
     width: 45px;
     height: 48px;
     right: auto;
-    background-color: #212452;
+    // background-color: #212452;
 }
 
 .swiper-number {
@@ -1333,11 +1335,11 @@ h2 {
 .swiper-button-next,
 .swiper-container-rtl .swiper-button-prev {
     //background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M27%2C22L27%2C22L5%2C44l-2.1-2.1L22.8%2C22L2.9%2C2.1L5%2C0L27%2C22L27%2C22z'%20fill%3D'%23007aff'%2F%3E%3C%2Fsvg%3E");
-    right: 10px;
+    right: 0;
     left: auto;
     width: 45px;
     height: 48px;
-    background-color: #212452;
+    // background-color: #212452;
 }
 
 .swiper-button-prev.swiper-button-white,
