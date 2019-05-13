@@ -389,6 +389,10 @@ h1 {
             bottom: 0;
             height: 1px;
             background-color: #b3c1d1;
+
+            @media screen and (max-width: 767px) {
+                background-color: #5a9aae;
+            }
         }
     }
 
