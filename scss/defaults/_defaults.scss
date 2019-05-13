@@ -75,6 +75,12 @@ body {
             filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#9ec2c5', endColorstr='#5d879e', GradientType=1);
         }
 
+        .header-between {
+            @media screen and (min-width: 768px) {
+                display: none;
+            }
+        }
+
         .partners {
             @media screen and (max-width: 767px) {
                 display: none;

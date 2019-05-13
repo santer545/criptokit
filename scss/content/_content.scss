@@ -94,6 +94,32 @@
     }
 }
 
+.mobile-lk-top {
+    background: rgba(1, 95, 124, 1);
+    background: -moz-linear-gradient(left, rgba(1, 95, 124, 1) 0%, rgba(0, 111, 115, 1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(1, 95, 124, 1)), color-stop(100%, rgba(0, 111, 115, 1)));
+    background: -webkit-linear-gradient(left, rgba(1, 95, 124, 1) 0%, rgba(0, 111, 115, 1) 100%);
+    background: -o-linear-gradient(left, rgba(1, 95, 124, 1) 0%, rgba(0, 111, 115, 1) 100%);
+    background: -ms-linear-gradient(left, rgba(1, 95, 124, 1) 0%, rgba(0, 111, 115, 1) 100%);
+    background: linear-gradient(to right, rgba(1, 95, 124, 1) 0%, rgba(0, 111, 115, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#015f7c', endColorstr='#006f73', GradientType=1);
+    padding: 10px;
+    margin: 0 20px;
+    font-size: 14px;
+    color: #fff;
+    margin-bottom: 20px;
+
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
+
+    div {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 10px;
+    }
+}
+
 h1 {
     color: #fff;
     font-size: 24px;
@@ -104,6 +130,20 @@ h1 {
         text-align: center;
         text-transform: uppercase;
         text-shadow: 2px 2px 5px rgba(150, 150, 150, 1);
+    }
+}
+
+.heading-lk {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 600;
+    margin: 0 0 10px;
+    padding-left: 40px;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 5px rgba(150, 150, 150, 1);
+
+    @media screen and (min-width: 768px) {
+        display: none;
     }
 }
 
@@ -563,6 +603,69 @@ h1 {
         }
 
 
+    }
+}
+
+.operation {
+    &-holder {
+        margin: 0 20px;
+        font-size: 14px;
+
+        @media screen and (min-width: 768px) {
+            display: none;
+        }
+    }
+
+    &-top {
+        border-radius: 3px;
+        background-color: #003068;
+        padding: 10px;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    &-cell {
+        flex: 0 0 33.3%;
+        max-width: 33.3%;
+        position: relative;
+
+        span {
+            display: block;
+        }
+
+        img {
+            position: absolute;
+            right: 30px;
+            top: 15px;
+        }
+    }
+
+    &-row {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        background-color: #fff;
+        font-weight: 300;
+        padding: 10px;
+        border-radius: 5px 5px 0 0;
+    }
+
+    &-bottom {
+        font-weight: 300;
+        padding: 5px 10px;
+        background-color: #fff;
+        border-top: 1px solid #a1c1d2;
+        border-radius: 0 0 5px 5px;
+
+        span {
+            display: block;
+        }
+    }
+
+    &-item {
+        margin-bottom: 10px;
     }
 }
 
