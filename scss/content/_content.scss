@@ -365,6 +365,10 @@ h1 {
         background-color: #fff;
         margin-top: 20px;
         padding-top: 15px;
+
+        @media screen and (max-width: 767px) {
+            background-color: transparent;
+        }
     }
 
     &-item {
@@ -747,6 +751,10 @@ label {
 .col-6 {
     flex: 0 0 50%;
     padding: 0 15px;
+
+    @media screen and (max-width: 767px) {
+        flex: 0 0 100%;
+    }
 }
 
 .attention {
@@ -754,6 +762,11 @@ label {
     background-color: #fff;
     line-height: 19px;
     margin-bottom: 13px;
+
+    @media screen and (max-width: 767px) {
+        margin-left: -20px;
+        margin-right: -20px;
+    }
 
     &-heading {
         font-weight: 600;
