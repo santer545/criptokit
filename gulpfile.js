@@ -33,6 +33,19 @@ gulp.task('styles', function() {
         .pipe(notify({ message: 'Styles task complete' }));
 });
 
+gulp.task('styles-mobile', function() {
+    return gulp.src('scss/style-mobile.scss')
+        .pipe(sourcemaps.init())
+        .pipe(sass({ style: 'expanded' }))
+        .pipe(autoprefixer('last 4 version'))
+        .pipe(sourcemaps.write())
+        .pipe(gulp.dest('dist/css'))
+        .pipe(rename({ suffix: '.min' }))
+        .pipe(cssnano())
+        .pipe(gulp.dest('dist/css'))
+        .pipe(notify({ message: 'Styles task complete' }));
+});
+
 
 gulp.task('rigger', function() {
     gulp.src('template/*.html')
@@ -87,7 +100,7 @@ gulp.task('clean', function() {
 
 // Default task
 gulp.task('default', function() {
-    gulp.start('styles', 'scripts');
+    gulp.start('styles', 'scripts', 'styles-mobile');
 });
 
 gulp.task('server', function() {
@@ -100,6 +113,7 @@ gulp.task('watch', function() {
 
     // Watch .scss files
     gulp.watch('scss/**/*.scss', ['styles', browserSync.reload]);
+    gulp.watch('scss/**/*.scss', ['styles-mobile', browserSync.reload]);
 
     // Watch .js files
     gulp.watch('js/**/*.js', ['scripts', browserSync.reload]);

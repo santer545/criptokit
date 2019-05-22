@@ -223,12 +223,12 @@
                             </div>
                             <div class="new-form">
                                 <div class="form-heading">Оставить отзыв:</div>
-                                <form action="" class="form">
+                                <form action="" class="form js_validate">
 
                                     <div class="form-group">
                                         <div class="row">
                                             <div class="col-6">
-                                                <input type="text" class="form-control" placeholder="Фамилия">
+                                                <input type="text" required data-validate class="form-control" placeholder="Фамилия">
                                             </div>
                                             <div class="col-6">
                                             </div>
@@ -236,8 +236,8 @@
                                     </div>
                                     <div class="form-group">
                                         <div class="row">
-                                            <div class="col-6 has-success">
-                                                <input type="text" class="form-control" placeholder="Имя">
+                                            <div class="col-6">
+                                                <input type="text" required data-validate class="form-control" placeholder="Имя">
                                             </div>
                                             <div class="col-6">
                                             </div>
@@ -245,8 +245,8 @@
                                     </div>
                                     <div class="form-group">
                                         <div class="row">
-                                            <div class="col-6 has-error">
-                                                <input type="email" class="form-control" placeholder="Email">
+                                            <div class="col-6">
+                                                <input type="email" required data-validate="email" class="form-control" placeholder="Email">
                                             </div>
                                             <div class="col-6">
                                                 <div class="error">Ошибка! необходимо ввести email</div>
@@ -258,7 +258,7 @@
                                         <textarea name="" id="" cols="30" rows="10" placeholder="Текст сообщения..."></textarea>
                                     </div>
                                     <div class="text-center btn-holder">
-                                        <button class="btn-primary btn">Отправить</button>
+                                        <button class="btn-primary btn" type="submit">Отправить</button>
                                     </div>
                                 </form>
                             </div>

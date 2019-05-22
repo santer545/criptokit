@@ -1,15 +1,10 @@
 .content {
     &-top {
-        background-image: url('../images/heading-bg.jpg');
-        background-size: cover;
-        background-repeat: no-repeat;
-        height: 220px;
+
+
         padding-top: 20px;
 
-        @media screen and (max-width: 767px) {
-            height: auto;
-            background-image: none;
-        }
+
 
         &__registration {
             background-image: url('../images/registration-bg.jpg');
@@ -31,15 +26,10 @@
     &-col {
         flex: 0 0 calc(100% - 235px);
         margin: 0 20px;
-        -webkit-box-shadow: 0px 9px 28px -15px rgba(0, 0, 0, 0.35);
-        -moz-box-shadow: 0px 9px 28px -15px rgba(0, 0, 0, 0.35);
-        box-shadow: 0px 9px 28px -15px rgba(0, 0, 0, 0.35);
+        padding: 0 20px;
+        width: calc(100% - 40px);
 
-        @media screen and (max-width: 767px) {
-            width: calc(100% - 40px);
-            padding: 0 20px;
-            box-shadow: none;
-        }
+
     }
 
     &-block {
@@ -47,10 +37,9 @@
             padding: 0;
             margin: 0;
             list-style-type: none;
+            margin-bottom: 20px;
 
-            @media screen and (max-width: 767px) {
-                margin-bottom: 20px;
-            }
+
 
             li {
                 position: relative;
@@ -74,10 +63,9 @@
         ol {
             padding: 0;
             margin: 0;
+            padding-left: 20px;
 
-            @media screen and (max-width: 767px) {
-                padding-left: 20px;
-            }
+
         }
     }
 
@@ -128,9 +116,7 @@
     color: #fff;
     margin-bottom: 20px;
 
-    @media screen and (min-width: 768px) {
-        display: none;
-    }
+
 
     div {
         display: flex;
@@ -144,12 +130,11 @@ h1 {
     font-size: 24px;
     font-weight: 600;
     margin: 0 0 25px;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 5px rgba(150, 150, 150, 1);
 
-    @media screen and (max-width: 767px) {
-        text-align: center;
-        text-transform: uppercase;
-        text-shadow: 2px 2px 5px rgba(150, 150, 150, 1);
-    }
+
 }
 
 .heading-lk {
@@ -161,57 +146,52 @@ h1 {
     text-transform: uppercase;
     text-shadow: 2px 2px 5px rgba(150, 150, 150, 1);
 
-    @media screen and (min-width: 768px) {
-        display: none;
-    }
+
 }
 
-.breadcrumbs {
-    padding: 0;
-    margin: 0;
-    list-style-type: none;
-    display: flex;
+// .breadcrumbs {
+//     padding: 0;
+//     margin: 0;
+//     list-style-type: none;
+//     display: flex;
 
-    @media screen and (max-width: 767px) {
-        display: none;
-    }
+//     @media screen and (max-width: 767px) {
+//         display: none;
+//     }
 
-    li {
-        position: relative;
+//     li {
+//         position: relative;
 
-        &:not(:last-child) {
-            margin-right: 12px;
+//         &:not(:last-child) {
+//             margin-right: 12px;
 
-            &:before {
-                content: '/';
-                position: absolute;
-                right: -9px;
-                color: #fff;
-            }
-        }
+//             &:before {
+//                 content: '/';
+//                 position: absolute;
+//                 right: -9px;
+//                 color: #fff;
+//             }
+//         }
 
-        a,
-        span {
-            color: #fff;
-            font-size: 14px;
-            text-decoration: none;
-        }
-    }
-}
+//         a,
+//         span {
+//             color: #fff;
+//             font-size: 14px;
+//             text-decoration: none;
+//         }
+//     }
+// }
 
 .profile {
     &-wrapper {
-        display: flex;
-        justify-content: space-between;
-        margin-top: -100px;
+
+        margin-top: 0;
+        display: block;
         margin-left: -20px;
         margin-right: -20px;
         padding-bottom: 70px;
 
-        @media screen and (max-width: 767px) {
-            margin-top: 0;
-            display: block;
-        }
+
 
         &__inverse {
             margin-top: 0;
@@ -221,10 +201,9 @@ h1 {
 
     &-col {
         flex: 0 0 235px;
+        display: none;
 
-        @media screen and (max-width: 767px) {
-            display: none;
-        }
+
 
 
 
@@ -381,13 +360,10 @@ h1 {
     }
 
     &-wrapper {
-        background-color: #fff;
         margin-top: 20px;
         padding-top: 15px;
 
-        @media screen and (max-width: 767px) {
-            background-color: transparent;
-        }
+
     }
 
     &-item {
@@ -407,11 +383,10 @@ h1 {
             right: 0;
             bottom: 0;
             height: 1px;
-            background-color: #b3c1d1;
 
-            @media screen and (max-width: 767px) {
-                background-color: #5a9aae;
-            }
+            background-color: #5a9aae;
+
+
         }
     }
 
@@ -554,74 +529,61 @@ h1 {
     &-item {
         padding: 20px;
         font-size: 16px;
-        border-bottom: 1px solid #a1c1d2;
 
-        @media screen and (max-width: 767px) {
-            border: none;
-        }
+
     }
 
     &-list {
-        @media screen and (max-width: 767px) {
-            padding-bottom: 50px;
-        }
+        padding-bottom: 50px;
+
     }
 
     &-heading {
         font-size: 18px;
         margin-bottom: 20px;
+        text-align: center;
 
-        @media screen and (max-width: 767px) {
-            text-align: center;
-        }
+
     }
 
     &-text {
         font-weight: 300;
         margin-bottom: 20px;
+        display: none;
 
-        @media screen and (max-width: 767px) {
-            display: none;
-        }
+
     }
 
     &-preview {
-        display: none;
+        display: block;
+        text-decoration: underline;
+        color: #336699;
+        font-size: 15px;
+        margin-bottom: 10px;
 
-        @media screen and (max-width: 767px) {
-            display: block;
-            text-decoration: underline;
-            color: #336699;
-            font-size: 15px;
-            margin-bottom: 10px;
-        }
+
     }
 
     &-sections,
     &-tags {
-        @media screen and (max-width: 767px) {
-            display: none;
-        }
+        display: none;
+
     }
 
     &-bottom {
         display: flex;
-        justify-content: space-between;
+        justify-content: flex-end;
+        padding-right: 50px;
         font-weight: 300;
         font-size: 12px;
 
-        @media screen and (max-width: 767px) {
-            justify-content: flex-end;
-            padding-right: 50px;
-        }
+
 
         a {
-            color: #009a9a;
+            color: #000;
+            text-decoration: none;
 
-            @media screen and (max-width: 767px) {
-                color: #000;
-                text-decoration: none;
-            }
+
         }
     }
 
@@ -661,9 +623,7 @@ h1 {
         margin: 0 20px;
         font-size: 14px;
 
-        @media screen and (min-width: 768px) {
-            display: none;
-        }
+
     }
 
     &-top {
@@ -743,28 +703,22 @@ h1 {
     }
 
     &-left {
-        flex: 0 0 160px;
+        flex: 0 0 100%;
 
-        @media screen and (max-width: 767px) {
-            flex: 0 0 100%;
-        }
+
 
         img {
-            @media screen and (max-width: 767px) {
-                width: 100%;
-            }
+            width: 100%;
+
         }
     }
 
     &-right {
-        flex: 0 0 calc(100% - 160px);
-        padding-left: 30px;
+        flex: 0 0 100%;
+        padding-left: 0;
+        padding-top: 20px;
 
-        @media screen and (max-width: 767px) {
-            flex: 0 0 100%;
-            padding-left: 0;
-            padding-top: 20px;
-        }
+
     }
 
     &-text {
@@ -772,12 +726,10 @@ h1 {
         font-size: 14px;
 
         &__inverse {
-            padding-left: 20px;
+            padding-left: 0;
             margin-bottom: 35px;
 
-            @media screen and (max-width: 767px) {
-                padding-left: 0;
-            }
+
         }
 
     }
@@ -815,12 +767,10 @@ label {
 }
 
 .col-6 {
-    flex: 0 0 50%;
+    flex: 0 0 100%;
     padding: 0 15px;
 
-    @media screen and (max-width: 767px) {
-        flex: 0 0 100%;
-    }
+
 }
 
 .attention {
@@ -828,11 +778,10 @@ label {
     background-color: #fff;
     line-height: 19px;
     margin-bottom: 13px;
+    margin-left: -20px;
+    margin-right: -20px;
 
-    @media screen and (max-width: 767px) {
-        margin-left: -20px;
-        margin-right: -20px;
-    }
+
 
     &-heading {
         font-weight: 600;
@@ -848,29 +797,23 @@ label {
     }
 
     &-heading {
-        padding: 10px 20px;
-        border-radius: 10px 10px 0 0;
-        background-color: #fff;
+        background-color: #003366;
+        padding: 0;
+        border-radius: 5px 5px 0 0;
         font-size: 18px;
         font-weight: 600;
 
-        @media screen and (max-width: 767px) {
-            background-color: #003366;
-            padding: 0;
-            border-radius: 5px 5px 0 0;
-        }
+
 
         span {
-            background-color: #d6e7e7;
+            background-color: #003366;
+            color: #fff;
             padding: 5px 20px;
             display: block;
             text-align: center;
             border-radius: 30px;
 
-            @media screen and (max-width: 767px) {
-                background-color: #003366;
-                color: #fff;
-            }
+
         }
 
 
@@ -882,10 +825,9 @@ label {
         font-size: 18px;
         display: flex;
         padding: 7px 20px;
+        display: none;
 
-        @media screen and (max-width: 767px) {
-            display: none;
-        }
+        
 
         &__cell {
             &:nth-child(2n+1) {
@@ -923,9 +865,8 @@ label {
         }
 
         &:nth-child(4) {
-            @media screen and (max-width: 767px) {
-                display: none;
-            }
+            display: none;
+            
         }
 
         span {
