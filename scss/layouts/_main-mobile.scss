@@ -278,6 +278,11 @@
     border-radius: 20px;
     color: #fff;
     border: none;
+    border: 2px solid #fff;
+
+    &:focus {
+        outline: none;
+    }
 }
 
 .account {
@@ -1116,12 +1121,19 @@ h2 {
 // авторизация
 
 .authorize {
+    height: 100%;
+    background-image: url('../images/enter-bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 50px;
+
     &-container {
-        max-width: 190px;
+        max-width: 70%;
         margin: 0 auto;
 
+
         &__inverse {
-            margin: 43px auto 0;
+            margin: 0 auto;
 
             .authorize-bottom {
                 padding-top: 60px;
@@ -1145,15 +1157,6 @@ h2 {
     &-bottom {
         padding-top: 13px;
 
-        [type=checkbox]:checked+label,
-        [type=checkbox]:not(:checked)+label {
-            color: #000;
-        }
-
-        [type=checkbox]:checked+label:after,
-        [type=checkbox]:not(:checked)+label:after {
-            color: #000;
-        }
     }
 
     &-help {
@@ -1162,10 +1165,11 @@ h2 {
         justify-content: space-between;
         margin-bottom: 30px;
 
+
         a {
             text-decoration: none;
             font-size: 12px;
-            color: #303030;
+            color: #fff;
         }
 
     }

@@ -292,6 +292,10 @@
     border-radius: 20px;
     color: #fff;
     border: none;
+
+    &:focus {
+        outline: none;
+    }
 }
 
 .account {
