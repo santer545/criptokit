@@ -934,3 +934,26 @@ label {
 
     }
 }
+
+.second-info {
+    padding: 5px;
+    font-size: 10px;
+    position: relative;
+    margin-top: 15px;
+    color: #fff;
+    border-radius: 3px;
+    background-color: #003366;
+
+    &:after {
+        content: '';
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 0 10px 10px 10px;
+        border-color: transparent transparent #003366 transparent;
+        position: absolute;
+        bottom: 100%;
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+}

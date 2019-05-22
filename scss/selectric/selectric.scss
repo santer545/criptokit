@@ -26,11 +26,18 @@ $selectric-font-size:       16px !default;                                      
   position: relative;
   overflow: hidden;
 
+  > img {
+    position: absolute;
+    top: 3px;
+    left: 5px;
+  }
+
   .label {
     display: block;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    padding-left: 35px;
     margin: 0 $selectric-inner-height 0 $selectric-spacing;
     font-size: $selectric-font-size;
     line-height: $selectric-inner-height;

@@ -77,6 +77,7 @@ gulp.task('scripts', function() {
             sourceDir + '/jquery-2.2.1.min.js',
             sourceDir + '/jquery.mask.js',
             sourceDir + '/validate.js',
+            sourceDir + '/ddslick.js',
             sourceDir + '/swiper.js',
             sourceDir + '/jquery.selectric.js',
             sourceDir + '/modal.js',

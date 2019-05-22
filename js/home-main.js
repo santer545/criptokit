@@ -41,16 +41,31 @@ function carousels(element) {
 function selectpicker() {
     $('select').selectric({
         optionsItemBuilder: function(itemData, element, index) {
-            return element.val().length ? '<img src="images/' + element.val() + '.jpg"><span>' + itemData.text + '</span>' : itemData.text;
+            return element.val().length ? '<img src="images/' + itemData.value + '.jpg"><span>' + itemData.text + '</span>' : itemData.text;
         }
     });
 
+    // $('select').on('selectric-change', function(event, element, selectric) {
+    //     console.log(selectric);
+    //     console.log('change')
+    // });
+
     $('.js-lang').selectric({
         optionsItemBuilder: function(itemData, element, index) {
-            console.log(itemData);
-            return element.val().length ? '<img src="images/' + element.val() + '.jpg"><span>' + itemData.text + '</span>' : itemData.text;
+            return element.val().length ? '<img src="images/' + itemData.value + '.jpg"><span>' + itemData.text + '</span>' : itemData.text;
         }
     });
+
+    $('.selectric-items li').on('click', function() {
+        if($(this).closest('.selectric-wrapper').find('.selectric img').length) {
+            $(this).closest('.selectric-wrapper').find('.selectric img').remove();
+        }
+        
+        var img = $(this).find('img');
+
+        var container = $(this).closest('.selectric-wrapper').find('.label');
+        img.clone().insertBefore(container);
+    })
 
     // $('js-lang').selectric({
     //     optionsItemBuilder: function(itemData, element, index) {

@@ -236,11 +236,16 @@
             line-height: 1;
             color: #fff;
         }
-
+        .selectric img {
+            display: none;
+        }
         .selectric .label {
             margin: 0 30px 0 10px;
             font-size: 16px;
             text-transform: uppercase;
+            padding-left: 0;
+
+
         }
 
         .selectric .button:after {
