@@ -10,6 +10,17 @@
             height: auto;
             background-image: none;
         }
+
+        &__registration {
+            background-image: url('../images/registration-bg.jpg');
+            background-repeat: no-repeat;
+            background-position: center;
+            padding-top: 10px;
+
+            .form-group {
+                margin-bottom: 10px;
+            }
+        }
     }
 
     &-container {
@@ -443,6 +454,23 @@ h1 {
         font-size: 12px;
         margin-bottom: 10px;
     }
+}
+
+.has-success {
+    .form-control {
+        border: 1px solid #00cdcd;
+    }
+}
+
+.has-error {
+    .form-control {
+        border: 1px solid #ff6666;
+    }
+}
+
+.error {
+    color: #ff6666;
+    font-size: 14px;
 }
 
 .relative {

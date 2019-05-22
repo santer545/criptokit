@@ -39,8 +39,27 @@ function carousels(element) {
 }
 
 function selectpicker() {
-    $('select').selectric();
+    $('select').selectric({
+        optionsItemBuilder: function(itemData, element, index) {
+            return element.val().length ? '<img src="images/' + element.val() + '.jpg"><span>' + itemData.text + '</span>' : itemData.text;
+        }
+    });
+
+    $('.js-lang').selectric({
+        optionsItemBuilder: function(itemData, element, index) {
+            console.log(itemData);
+            return element.val().length ? '<img src="images/' + element.val() + '.jpg"><span>' + itemData.text + '</span>' : itemData.text;
+        }
+    });
+
+    // $('js-lang').selectric({
+    //     optionsItemBuilder: function(itemData, element, index) {
+    //         return element.val().length ? '<img src="' + element.val() + '.jpg">' : itemData.text;
+    //     }
+    // });
 }
+
+
 
 window.onscroll = function() { scrollFunction() };
 

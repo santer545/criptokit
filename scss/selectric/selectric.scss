@@ -196,17 +196,17 @@ $selectric-font-size:       16px !default;                                      
     cursor: pointer;
 
     &.selected {
-      background: #E0E0E0;
+      //background: #E0E0E0;
       color: #444;
     }
 
     &.highlighted {
-      background: #D0D0D0;
+      //background: #D0D0D0;
       color: #444;
     }
 
     &:hover {
-      background: #D5D5D5;
+      //background: #D5D5D5;
       color: #444;
     }
   }
